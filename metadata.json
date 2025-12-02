@@ -1,0 +1,5 @@
+{
+  "name": "AutoDeploy Agent",
+  "description": "An AI-powered agent that generates React applications from natural language prompts, creates GitHub repositories, and orchestrates Vercel deployments automatically.",
+  "requestFramePermissions": []
+}
