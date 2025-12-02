@@ -201,13 +201,6 @@ const App: React.FC = () => {
     // We combine the base template with the ACTUAL code of the current file
     // to simulate a perfect "Quine".
     let code = getSelfSourceCode();
-    // This is a rough simulation for the user
-    const currentAppCode = `
-// File: src/App.tsx
-// (The actual code of this application)
-`;
-    // We append the current App.tsx logic to the template so it's not a placeholder
-    // In a real file system we would read fs.readFileSync, here we rely on templateService being up to date.
     
     setPrompt(code);
     addLog("Loaded AutoDeploy Agent source code. Ready to replicate.", 'success');
